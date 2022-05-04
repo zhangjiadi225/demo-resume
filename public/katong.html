@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="gbk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: radial-gradient(#555555, #1e1f2a);
+            overflow: hidden;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .text {
+            position: relative;
+            color: wheat;
+            text-align: center;
+            margin: 40px;
+            max-width: 650px;
+        }
+
+        .text span {
+            position: relative;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <p class="text">能用js实现的，终将用js实现。
+        </p>
+    </section>
+    <script src="../node_modules/animejs/lib/anime.min.js"></script>
+    <script>
+        const text = document.querySelector('.text')
+        text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>")
+        const animation = anime.timeline({
+            targets: '.text span',
+            easing: 'easeInOutExpo',
+            loop: true
+        })
+        animation.add({
+            rotate: function () {
+                return anime.random(-180, 180)
+            },
+            translateX: function () {
+                return anime.random(-250, 250)
+            },
+            translateY: function () {
+                return anime.random(-200, 200)
+            },
+            duration: 4000,
+            delay: anime.stagger(20)
+        })
+        animation.add({
+            rotate: 0,
+            translateX: 0,
+            translateY: 0,
+            duration: 4000,
+            delay: anime.stagger(20)
+        })
+    </script>
+</body>
+
+</html>
