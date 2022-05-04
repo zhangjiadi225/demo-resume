@@ -9,15 +9,6 @@ const arr = reactive(['你不一定要很厲害，才能開始', '你要開始�
     <Describe v-for="item in arr">
       {{ item }}
     </Describe>
-    <div class="show">
-      <iframe
-        src="/katong.html"
-        style="width: 100%; height: 100%"
-        scrolling="auto"
-        frameborder="0"
-      >
-      </iframe>
-    </div>
     <!--测试注释-->
   </div>
 </template>
