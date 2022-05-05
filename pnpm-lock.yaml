@@ -5,6 +5,8 @@ specifiers:
   animejs: ^3.2.1
   sass: ^1.51.0
   sass-loader: ^12.6.0
+  three: ^0.140.0
+  vanta: ^0.5.22
   vite: ^2.9.5
   vue: ^3.2.25
   vue-router: '4'
@@ -13,6 +15,8 @@ dependencies:
   animejs: 3.2.1
   sass: 1.51.0
   sass-loader: 12.6.0_sass@1.51.0
+  three: 0.140.0
+  vanta: 0.5.22
   vue: 3.2.33
   vue-router: 4.0.14_vue@3.2.33
 
@@ -568,11 +572,19 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
+  /three/0.140.0:
+    resolution: {integrity: sha512-jcHjbnYspPLDdsDQChmzyAoZ5KhJbgFk6pNGlAIc9fQMvsfPGjF5H9glrngqvb2CR/qXcClMyp5PYdF996lldA==}
+    dev: false
+
   /to-regex-range/5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: false
+
+  /vanta/0.5.22:
+    resolution: {integrity: sha512-Y58U1SjHU6HeIuwq+te7eonyi7LWzKqyPDjZyQ7Kb6Zy4ampNJHRIUZvf1Pwl6uTC6Qi6P9fUYDsUVQDHq0KKg==}
     dev: false
 
   /vite/2.9.6_sass@1.51.0:
