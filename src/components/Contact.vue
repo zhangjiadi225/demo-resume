@@ -20,7 +20,7 @@ const email = function () {
   oInput.remove()
 }
 const file = function () {
-  window.open('/didiResume/new_file.html')
+  window.open('/new_file.html')
 }
 </script>
 
